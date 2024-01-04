@@ -1,0 +1,76 @@
+<?php
+header("X-Frame-Options: DENY");
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  </style>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <button onclick="openFullscreen();">Go Fullscreen</button>
+<body>
+  <h2>Enter URL to create an iframe:</h2>
+  <button onclick="copyToClipboard()">Copy Discord Link</button>
+  <button onclick="createIframe()">Enter URL</button>
+  URL: discord.beardy4906.repl.co
+  
+  
+  <script src="script.js"></script>
+  
+  
+  
+  <script>
+    function createIframe() {
+     
+      var url = prompt("Please enter the URL:");
+      if (url) {
+        var iframe = document.createElement('iframe');
+        
+        iframe.src = url;
+        iframe.width = '1248px';
+        iframe.height = '702px';
+        document.body.appendChild(iframe);
+        iframe.id = 'discord';
+      }
+    }
+    function openFullscreen() {
+    var elem = document.getElementById("discord");
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+    function copyToClipboard() {
+      var dummy = document.createElement('input'),
+      text = 'https://discord.com/app';  // replace with your link
+
+      document.body.appendChild(dummy);
+      dummy.value = text;
+      dummy.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummy);
+
+      alert('Link copied to clipboard!');
+    }
+    
+  </script>
+</body>
+
+</html>
