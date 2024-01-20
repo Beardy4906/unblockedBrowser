@@ -8,10 +8,12 @@ body {
   display: block;
 }
 .buttons{
-  border-raidus: 20px;
+  border-raidus: 50px;
   font-family: Arial;
-  background-color: lightblue;
-  border-color: transparent;
+  background-color: orange;
+  border-width: 10px;
+  padding: 20px;
+  border-color: black;
   margin: 10px;
   
 }
