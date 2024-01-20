@@ -11,9 +11,12 @@ body {
   border-raidus: 50px;
   font-family: Arial;
   background-color: orange;
-  border-width: 10px;
+  border-width: 5px;
   padding: 20px;
   border-color: black;
   margin: 10px;
   
+}
+.buttons:active{
+  opacity: 0.5;
 }
