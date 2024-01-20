@@ -15,7 +15,7 @@ body {
   padding: 20px;
   border-color: black;
   margin: 10px;
-  
+  box-shadow: none;
 }
 .buttons:active{
   opacity: 0.5;
