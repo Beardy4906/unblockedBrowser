@@ -4,5 +4,14 @@ html {
 }
 body {
   font-family: Arial;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+  border-raidus: 20px;
+  font-family: Arial;
   background-color: lightblue;
+  border-color: transparent;
+  
 }
