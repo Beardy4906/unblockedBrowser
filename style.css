@@ -5,8 +5,7 @@ html {
 body {
   font-family: Arial;
   background-color: grey;
-  display: flex;
-  flex: wrap;
+  display: block;
 }
 .buttons{
   border-raidus: 20px;
