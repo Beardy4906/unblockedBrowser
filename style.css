@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: Arial;
-  background-image: linear-gradient(to right, blue, lightblue);
+  background: linear-gradient(to right, #007bff, #87ceeb);
   display: block;
 }
 .buttons{
