@@ -4,11 +4,11 @@ html {
 }
 body {
   font-family: Arial;
-  background: linear-gradient(to right, #007bff, #87ceeb);
+  background: linear-gradient(right, #007bff, #87ceeb);
   display: block;
 }
 .buttons{
-  border-raidus: 50px;
+  border-radius: 50px;
   font-family: Arial;
   background-color: orange;
   border-width: 5px;
